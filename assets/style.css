@@ -1,0 +1,26 @@
+ * {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #cc0
+ }
+
+ #principal{
+    display: flex;
+ }
+ .div-flex {
+    display: flex;
+    flex-direction: column;
+ }
+
+input {
+   border-radius: 5px;
+   margin: 10px;
+   padding-top: 10px;
+}
+
+button {
+    background-color: rgb(47, 101, 29);
+    color: #FFF;
+    border-radius: 5px;
+    margin: 5px;
+}
