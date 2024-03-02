@@ -2,27 +2,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../public/assets/style/style.css">
     <title>Atividades</title>
 </head>
 <body>
     <main>
         <div id="principal">
-            <div class="div-flex">
-                <label for="">Descrição</label>
-                <input type="text" name="" id="descricao">
-            </div>
-            <div class="div-flex">
-                <label for="">Horário</label>
-                <input type="datetime-local" name="" id="horario">
-            </div>
-            <button onclick="criarAtividade()">Criar atividade</button>
-            <button onclick="limparAtividades()" style="background-color: chocolate;">Limpar atividades</button>
+                <div class="div-flex">
+                    <label for="">Descrição</label>
+                    <input type="text" name="" id="descricao">
+                </div>
+                <div class="div-flex">
+                    <label for="">Horário</label>
+                    <input type="datetime-local" name="" id="horario">
+                </div>
+                <button onclick="criarAtividade()">Criar atividade</button>
+                <button onclick="limparAtividades()" style="background-color: chocolate;">Limpar atividades</button>
         </div>
 
         <ul id="ul-lista">
         </ul>
     </main>
-    <script src="../assets/cria-atividade.js"></script>
+    <script src="../public/assets/js/cria-atividade.js"></script>
 </body>
 </html>
