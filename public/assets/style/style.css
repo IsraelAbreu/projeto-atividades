@@ -1,7 +1,8 @@
  * {
     font-size: 16px;
     font-weight: 700;
-    background-color: #cc0
+    background-color: rgb(50, 88, 127);
+    color: #fff
  }
 
  #principal{
@@ -19,8 +20,28 @@ input {
 }
 
 button {
-    background-color: rgb(47, 101, 29);
-    color: #FFF;
-    border-radius: 5px;
-    margin: 5px;
+   background-color: rgb(47, 101, 29);
+   color: #FFF;
+   border-radius: 5px;
+   margin: 5px;
+   font-size: 12px;
+   cursor: pointer;
+}
+
+#div-lista {
+   margin-top: 20px;
+   margin-left: 10px;
+   border: 1px solid #000;
+   border-radius: 5px;
+   max-width: 433px;
+}
+
+p {
+   margin-left: 10px;
+   max-width: 300px;
+   padding: 10px;
+}
+p:hover{
+    background-color: rgb(60, 80, 110);
+    cursor: pointer;
 }

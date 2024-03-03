@@ -43,13 +43,26 @@ function getAtividades () {
 }
 
 function manipularDom(atividade) {
-    const listaAtividades = document.querySelector("#ul-lista");
-    let itemDaLista = document.createElement("li");
-    itemDaLista.innerHTML = `${atividade.descricao} | ${atividade.horario}`;
+    const listaAtividades = document.querySelector("#div-lista");
+    let itemDaLista = document.createElement("p");
+    itemDaLista.innerHTML = `${atividade.descricao} - ${formataData(
+      atividade.horario
+    )}`;
     listaAtividades.appendChild(itemDaLista);
 }
 
 function limparAtividades () {
     localStorage.clear()
     window.location.reload()
+}
+
+function formataData (data) {
+  let dateForm = new Date(data)
+  let dia = dateForm.getDate().toString().padStart(2, '0')
+  let mes = (dateForm.getMonth() + 1).toString().padStart(2, '0')
+  let ano = dateForm.getFullYear()
+  let horas = dateForm.getHours().toString().padStart(2, '0')
+  let minutos = dateForm.getMinutes().toString().padStart(2, '0')
+
+  return `${dia}/${mes}/${ano} - ${horas}:${minutos}`;
 }
